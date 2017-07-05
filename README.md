@@ -1,7 +1,5 @@
 # Suppliers in Novosibirsk
-
-Frontend demo site "Suppliers of Novosibirsk".
-
+Frontend demo site["Suppliers of Novosibirsk"](https://ranc58.github.io/22_proto_markup/site/index.html).
 # How to install:
 1. Recomended use venv or virtualenv for better isolation.\
    Venv setup example: \
@@ -9,6 +7,7 @@ Frontend demo site "Suppliers of Novosibirsk".
    `source myenv/bin/activate`
 2. Install requirements: \
    `pip3 install -r requirements.txt` (alternatively try add `sudo` before command)
+
 # How to launch:
 Run script:
 `$python3 create_site.py`\
