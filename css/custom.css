@@ -49,6 +49,11 @@
     color:black !important;
 }
 
+.reviews-container {
+    max-width: 900px;
+    margin: 5px auto;
+}
+
 .reviews-button {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -57,6 +62,7 @@
 .custom_footer {
      background-color: #b4b4b4;
 }
+
 
 .mini_logo {
     margin: 35px 0 0 30px;
