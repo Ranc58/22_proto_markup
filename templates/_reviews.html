@@ -1,0 +1,25 @@
+<div class="reviews-container">
+    <div class="row center-block">
+		<div class=" col-sm-6 col-sm-offset-3">
+				<div class="reviews-carousel">
+                    {% for review in range(reviews) %}
+                    <div>
+                        <div class="reviews-avatar">
+                            <img src="img/no_avatar.png" alt="No avatar">
+                        </div>
+                        <p class="reviews-author">
+                          {{ author }}
+                        </p>
+                        <p class="reviews-text">
+                           {{ review_text }}
+                        </p>
+			        </div>
+                    {% endfor %}
+			</div>
+		</div>
+
+		<div class="col-sm-2 col-sm-offset-1" style="text-align: center ">
+			<a class="btn btn-default reviews-button">Оставить отзыв</a>
+		</div>
+    </div>
+</div>

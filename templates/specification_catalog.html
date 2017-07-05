@@ -8,12 +8,12 @@
               <a href="index.html"> Главная </a>
               <span class="glyphicon glyphicon-chevron-right"></span>
               <a href="org_catalog.html">Каталог организаций</a>
-              <span class="glyphicon glyphicon-chevron-right"></span> ЖБИ
+              <span class="glyphicon glyphicon-chevron-right"></span> {{ specification }}
         </div>
     </div>
 <div class="container">
             <h2 class=" text-left">Производители и оптовые компании в Новосибирске и области</h2>
-            <h4 class="text-left">ЖБИ</h4>
+            <h4 class="text-left">{{ specification }}</h4>
 </div>
-{% include "_orgs_table" %}
-{% endbloc %}
+{% include "_orgs_table.html" %}
+{% endblock %}

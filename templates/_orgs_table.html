@@ -2,6 +2,7 @@
                <div class="col-md-11">
               <table class="table table-hover table-bordered">
               <tbody>
+              {% for table in range(tables) %}
                 <tr>
                   <td>
                     <div class="media">
@@ -9,35 +10,18 @@
                         <img class="media-object mini_logo" src="img/logo.png" alt="Логотип организации" width="64" height="64">
                       </a>
                       <div class="media-body text-center">
-                        <a href="organisation.html"><h4 class="media-heading">ООО Строй-Сервис-Монтаж</h4></a>
+                        <a href="organisation.html"><h4 class="media-heading">{{ company_name }}</h4></a>
                         <address>
-                          <strong>Место деятельности: </strong> Новосибирск <br>
-                          <strong>Продукция: </strong> ЖБИ, бетон <br>
-                          <strong>Адрес: </strong> Под часами, на том же месте <br>
-                          <strong>Телефон: </strong> 00-00-00 <br>
+                          <strong>Место деятельности: </strong> {{ company_location }} <br>
+                          <strong>Продукция: </strong> {{ company_production }} <br>
+                          <strong>Адрес: </strong> {{ company_address }} <br>
+                          <strong>Телефон: </strong> {{ company_phone_number }} <br>
                         </address>
                       </div>
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    <div class="media">
-                      <a class="pull-left" href="#">
-                        <img class="media-object mini_logo" src="img/logo.png" alt="Логотип организации" width="64" height="64">
-                      </a>
-                      <div class="media-body text-center">
-                        <a href="organisation.html"><h4 class="media-heading">ООО Строй-Сервис-Монтаж</h4></a>
-                        <address>
-                          <strong>Место деятельности: </strong> Новосибирск <br>
-                          <strong>Продукция: </strong> ЖБИ, бетон <br>
-                          <strong>Адрес: </strong> Под часами, на том же месте <br>
-                          <strong>Телефон: </strong> 00-00-00 <br>
-                        </address>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
+              {% endfor %}
               </tbody>
             </table>
             </div>

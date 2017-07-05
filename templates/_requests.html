@@ -17,70 +17,22 @@
 
 
 			<div class="requests">
-
+                {% for request in range(requests) %}
 				<div class="col-sm-12 border_style">
                     <div class="row">
 						<div class="col-sm-6">
-							<p class="text-muted">вчера, в 12:50</p>
+							<p class="text-muted">{{ time }}</p>
 						</div>
 						<div class="col-sm-6 text-right">
 						<a href="#"><span class="glyphicon glyphicon-star"></span> В закладки</a>
 						</div>
                     </div>
-					<p>60шт. ПК от 72-15  до ПК 21-15,
-                        Криводановка, с доставкой.</p>
-					<p class="name">Алексей</p>
+					<p>{{ request_info }}</p>
+					<p class="name">{{ request_person_name }}</p>
 					<button type="submit" class="btn btn-default btn-sm">Показать телефон</button>
-					<span class="text-muted">12 просмотров</span>
+					<span class="text-muted">{{ views_value }}</span>
 				</div>
-
-				<div class="border-block col-sm-12 border_style">
-                    <div class="row">
-						<div class="col-sm-6">
-							<p class="text-muted">вчера, в 12:50</p>
-						</div>
-						<div class="col-sm-6 text-right">
-						<a href="#"><span class="glyphicon glyphicon-star"></span> В закладки</a>
-						</div>
-                    </div>
-					<p>60шт. ПК от 72-15  до ПК 21-15,
-                        Криводановка, с доставкой.</p>
-					<p class="name">Алексей</p>
-					<button type="submit" class="btn btn-default btn-sm">Показать телефон</button>
-					<span class="text-muted">12 просмотров</span>
-				</div>
-
-				<div class="border-block col-sm-12 border_style">
-                    <div class="row">
-						<div class="col-sm-6">
-							<p class="text-muted">вчера, в 12:50</p>
-						</div>
-						<div class="col-sm-6 text-right">
-						<a href="#"><span class="glyphicon glyphicon-star"></span> В закладки</a>
-						</div>
-                    </div>
-					<p>60шт. ПК от 72-15  до ПК 21-15,
-                        Криводановка, с доставкой.</p>
-					<p class="name">Алексей</p>
-					<button type="submit" class="btn btn-default btn-sm">Показать телефон</button>
-					<span class="text-muted">12 просмотров</span>
-				</div>
-
-				<div class="border-block col-sm-12 border_style">
-                    <div class="row">
-						<div class="col-sm-6">
-							<p class="text-muted">вчера, в 12:50</p>
-						</div>
-						<div class="col-sm-6 text-right">
-						<a href="#"><span class="glyphicon glyphicon-star"></span> В закладки</a>
-						</div>
-                    </div>
-					<p>60шт. ПК от 72-15  до ПК 21-15,
-                        Криводановка, с доставкой.</p>
-					<p class="name">Алексей</p>
-					<button type="submit" class="btn btn-default btn-sm">Показать телефон</button>
-					<span class="text-muted">12 просмотров</span>
-				</div>
+                {% endfor %}
 			</div>
 
 
