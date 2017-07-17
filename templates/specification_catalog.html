@@ -1,19 +1,19 @@
 {% extends "_base.html" %}
 {% block content %}
 <div class="row">
-        <div class="col-xs-5 col-sm-4" style="margin-left: 1%">
-          <img src="img/logo.png" alt="logo" style="padding-right: 20px">
-        </div>
-        <div class="col-xs-5 col-sm-4">
-              <a href="index.html"> Главная </a>
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <a href="org_catalog.html">Каталог организаций</a>
-              <span class="glyphicon glyphicon-chevron-right"></span> {{ specification }}
-        </div>
+    <div class="col-xs-5 col-sm-4" style="margin-left: 1%">
+        <img src="img/logo.png" alt="logo" style="padding-right: 20px">
     </div>
+    <div class="col-xs-5 col-sm-4">
+        <a href="index.html"> Главная </a>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <a href="org_catalog.html">Каталог организаций</a>
+        <span class="glyphicon glyphicon-chevron-right"></span> {{ specification }}
+    </div>
+</div>
 <div class="container">
-            <h2 class=" text-left">Производители и оптовые компании в Новосибирске и области</h2>
-            <h4 class="text-left">{{ specification }}</h4>
+    <h2 class=" text-left">Производители и оптовые компании в Новосибирске и области</h2>
+    <h4 class="text-left">{{ specification }}</h4>
 </div>
 {% include "_orgs_table.html" %}
 {% endblock %}

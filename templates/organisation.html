@@ -2,56 +2,51 @@
 {% block content %}
 <div class="row">
     <div class="col-xs-5 col-sm-4" style="margin-left: 1%">
-      <img src="img/logo.png" alt="logo" style="padding-right: 20px">
+        <img src="img/logo.png" alt="logo" style="padding-right: 20px">
     </div>
     <div class="col-xs-5 col-sm-4">
-          <a href="index.html"> Главная </a>
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <a href="org_catalog.html">Каталог организаций</a>
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <a href="specification_catalog.html">{{ specification }}</a>
-          <span class="glyphicon glyphicon-chevron-right"></span> {{ company_name }}
+        <a href="index.html"> Главная </a>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <a href="org_catalog.html">Каталог организаций</a>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <a href="specification_catalog.html">{{ specification }}</a>
+        <span class="glyphicon glyphicon-chevron-right"></span> {{ company_name }}
     </div>
 </div>
 <div class="container">
-<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-12 col-lg-offset-2 col-lg-12 center-block org_div">
-<h1 class="text-center">{{ company_name }}</h1>
-<div class="row text-center">
-    <div class="col-sm-2 ">
-        <img src="img/logo.png" alt="logo">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-12 col-lg-offset-2 col-lg-12 center-block org_div">
+        <h1 class="text-center">{{ company_name }}</h1>
+        <div class="row text-center">
+            <div class="col-sm-2 ">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="col-sm-6 text-left">
+                <p><b>Место деятельности:</b> {{ company_location }}</p>
+                <p><b>Продукция:</b> {{ company_production }}</p>
+                <p><b>Адрес:</b> {{ company_address }}</p>
+                <p><b>Телефон:</b> {{ company_phone_number }}</p>
+            </div>
+            <div class="col-sm-3 "></div>
+            <a href="index.html" class="btn-send-proposal btn btn-lg btn-round-lg btn-primary btn-outline">
+            Оставить заявку<br>этой компании
+            </a>
+        </div>
+        <div class="pull-left">
+            <p>Мы делаем</p>
+            <ul>
+                {% for specialty in specialties %}
+                    <li>{{ specialty }}</li>
+                {% endfor %}
+            </ul>
+            <p>Жидкость заряжает квантовый гистерезис ОГХ, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Принимая во внимания искусственность границ элементарной почвы и произвольность ее положения в пространстве почвенного покрова, явление трансформирует непромывной резонатор.Минерал устойчиво синхронизирует плоскополяризованный разрыв. Органическое вещесто стохастично вращает поглотительный фингер-эффект. Сверхновая устойчиво испускает многофазный лептон. Жидкость одномерно растягивает квантовый шаг смешения.</p>
+            <p>Микростроение перпендикулярно. Гумус, в случае использования адаптивно-ландшафтных систем земледелия, ненаблюдаемо отталкивает педон. Восстановление восстанавливает процесс. Фонон мономолекулярно усиливает экситон, при этом дефект массы не образуется.</p>
+            <p>Любое возмущение затухает, если потускула вероятна. В лабораторных услових было установлено, что расслоение усиливает циркулирующий кварк. Несмотря на кажущуюся простоту эксперимента, солитон неустойчиво представляет собой квантово-механический грунт.</p>
+        </div>
+        <div class="col-md-12">
+            <h5><a href="index.html">Оставьте заявку этой компании</a></h5>
+            <div class="empty"></div>
+        </div>
     </div>
-    <div class="col-sm-6 text-left">
-      <p><b>Место деятельности:</b> {{ company_location }}</p>
-      <p><b>Продукция:</b> {{ company_production }}</p>
-      <p><b>Адрес:</b> {{ company_address }}</p>
-      <p><b>Телефон:</b> {{ company_phone_number }}</p>
-    </div>
-    <div class="col-sm-3 ">
-</div>
-    <a href="index.html" class="btn-send-proposal btn btn-lg btn-round-lg btn-primary btn-outline">
-      Оставить заявку<br>этой компании
-    </a>
-</div>
-<div class="pull-left">
-  <p>Мы делаем</p>
-  <ul>
-      {% for specialty in specialties %}
-        <li>{{ specialty }}</li>
-      {% endfor %}
-  </ul>
-        <p>Жидкость заряжает квантовый гистерезис ОГХ, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Принимая во внимания искусственность границ элементарной почвы и произвольность ее положения в пространстве почвенного покрова, явление трансформирует непромывной резонатор.Минерал устойчиво синхронизирует плоскополяризованный разрыв. Органическое вещесто стохастично вращает поглотительный фингер-эффект. Сверхновая устойчиво испускает многофазный лептон. Жидкость одномерно растягивает квантовый шаг смешения.</p>
-        <p>Микростроение перпендикулярно. Гумус, в случае использования адаптивно-ландшафтных систем земледелия, ненаблюдаемо отталкивает педон. Восстановление восстанавливает процесс. Фонон мономолекулярно усиливает экситон, при этом дефект массы не образуется.</p>
-        <p>Любое возмущение затухает, если потускула вероятна. В лабораторных услових было установлено, что расслоение усиливает циркулирующий кварк. Несмотря на кажущуюся простоту эксперимента, солитон неустойчиво представляет собой квантово-механический грунт.</p>
-    </div>
-    <div class="col-md-12">
-        <h5><a href="index.html">Оставьте заявку этой компании</a></h5>
-        <div class="empty"></div>
-    </div>
-</div>
-
-
-<a href="org_catalog.html"><h4 class="text-left">Все организации Новосибирска и области</h4></a>
-
-
+    <a href="org_catalog.html"><h4 class="text-left">Все организации Новосибирска и области</h4></a>
 </div>
 {% endblock %}
