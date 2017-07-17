@@ -5,11 +5,11 @@
             {% for table in range(tables) %}
                 <tr>
                     <td>
-                        <div class="media">
-                            <a class="pull-left" href="#">
-                            <img class="media-object mini_logo" src="img/logo.png" alt="Логотип организации" width="64" height="64">
-                            </a>
-                            <div class="media-body text-center">
+                        <div class="row flex">
+                            <div class="col-sm-3 text-center">
+                                <img src="img/logo.png" alt="Логотип организации" width="64" height="64">
+                            </div>
+                            <div class="col-sm-7 col-sm-offset-1 text-center">
                                 <a href="organisation.html"><h4 class="media-heading">{{ company_name }}</h4></a>
                                 <address>
                                     <strong>Место деятельности: </strong> {{ company_location }} <br>
