@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,11 +44,6 @@
     {% block content %}
     {% endblock %}
 
-
-    {% if footer %}
-        {% include "_footer.html" %}
-    {% endif %}
-
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -56,4 +51,10 @@
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 </body>
+    {% if footer %}
+        <footer>
+        {% include "_footer.html" %}
+        </footer>
+    {% endif %}
+
 </html>

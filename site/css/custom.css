@@ -1,5 +1,24 @@
-.row {
-    width: 100%;
+@media (min-width: 768px) {
+    .regions_right {
+        float: right !important;
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .reg_menu_position {
+        left: auto;
+        right: 0;
+    }
+}
+
+
+.row-custom {
+    width: 100%
+}
+
+.nowrap_text {
+    white-space: nowrap;
 }
 
 

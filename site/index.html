@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,40 +106,32 @@
         </div>
     </form>
 </div>
-<h2 class="text-center">Свежие заявки</h2>
+
 <div class="container">
+    <h2 class="text-center">Свежие заявки</h2>
     <div class="row">
-        <div class="col-xs-4 text-center">
-            <div class="row">
-                <div class="col-sm-1 col-sm-offset-2">
-                    Раздел:
-                </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                        <li><a href="#">Раздел 1</a></li>
-                        <li><a href="#">Раздел 2</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="dropdown col-xs-12 col-sm-6 col-md-6">Раздел:
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Раздел 1</a></li>
+                <li><a href="#">Раздел 2</a></li>
+
+            </ul>
         </div>
-        <div class="col-xs-5 col-xs-offset-3 text-center">
-             <div class="row">
-                 <div class="col-sm-2">
-                    Регион:
-                 </div>
-                 <div class="col-sm-10 col-sm-offset-0">
-                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область<b class="caret"></b></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="#">Амурская область</a></li>
-                        <li><a href="#">Новосибирская Область</a></li>
-                        <li><a href="#">Иркутская область</a></li>
-                    </ul>
-                  </div>
-             </div>
+        <div class="dropdown col-xs-12 col-sm-6 col-md-6 regions_right">Регион:
+            <a href="#"  data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область<b class="caret"></b></a>
+            <ul class="dropdown-menu reg_menu_position">
+                <li><a href="#">Амурская область</a></li>
+                <li><a href="#">Новосибирская Область</a></li>
+                <li><a href="#">Иркутская область</a></li>
+            </ul>
         </div>
     </div>
+</div>
 
+
+
+<div class="container">
     <div class="requests">
         
         <div class="col-sm-12 border_style">
@@ -271,13 +263,20 @@
 </div>
 
 
+    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="../static/js/slick/slick.min.js"></script>
 
+</body>
     
+        <footer>
         <div class="container-fluid custom_footer">
-    <div class="row">
+    <div class="row row-custom">
         <h2 class="text-center">Вы поставщик?</h2>
         <div class="col-sm-3 col-xs-offset-2">
-            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам: <span class="text-nowrap">+7 999 888-77-66</span></p>
+            <p>Для доступа к телефонам покупателей заполните форму или позвоните нам: <span class="nowrap_text">+7 999 888-77-66</span><p>
             <p>Текст с дополнительной информацией по условиям сотрудничества
                 Возможно стоит вынести его на отдельную страницу.
                 Текст с дополнительной информацией по условиям сотрудничеаства.
@@ -318,13 +317,7 @@
         </div>
     </div>
 </div>
+        </footer>
     
 
-    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/main.js"></script>
-    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../static/js/bootstrap-notify.min.js"></script>
-    <script type="text/javascript" src="../static/js/slick/slick.min.js"></script>
-
-</body>
 </html>
